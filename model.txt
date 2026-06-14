@@ -1,0 +1,34 @@
+class sampah extends Model
+{
+    protected $table="sampah";
+    protected $fillable = ['IDSampah','harga'];
+    public $timestamps = false;
+}
+
+class TransaksiBank extends Model
+{
+    protected $table='TransaksiBank';
+    protected $fillable = [
+        'IDTransasksiSampah',
+        'NIK',
+        'IDBankSampah',
+        'IDSampah',
+        'QTY',
+        'Tanggal'
+    ];
+
+    public $timestamps = false;
+}
+
+class TransaksiPabrik extends Model
+{
+    protected $table='TransaksiPabrik';
+    protected $fillable = [
+        'IDPabrik',
+        'IDBankSampah',
+        'Tanggal',
+        'Uang'
+    ];
+
+    public $timestamps = false;
+}

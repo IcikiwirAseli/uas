@@ -1,0 +1,62 @@
+/* ==========================================================================
+   STYLING LAYOUT UTAMA & NAVBAR (IRIS)
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4fbf4; /* Latar hijau super muda */
+    font-family: 'Inter', sans-serif;
+}
+
+.iris-navbar {
+    background-color: #ffffff;
+    padding: 15px 4%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iris-nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    color: #1a5d46;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.iris-nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.iris-nav-link {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.iris-nav-link:hover {
+    color: #1a5d46;
+}
+
+.iris-nav-user {
+    font-weight: 600;
+    color: #1a5d46;
+    font-size: 15px;
+}
+
+.iris-nav-logout {
+    color: #d10000;
+    font-weight: 600;
+}
+
+.iris-nav-logout:hover {
+    color: #a30000;
+}

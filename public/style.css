@@ -1,0 +1,1042 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fdf6;
+    color: #2d3436;
+    margin: 20px;
+}
+
+h1 {
+    color: #1A5A46;
+}
+
+h2, h3 {
+    color:white;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Buttons */
+.btn{
+    background-color: #FF9D00;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+    height: 100%;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+
+.btn-edit{
+    background-color: #1A5A46;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.1s;
+    height: 100%;
+}
+
+.btn-delete {
+    background-color: #9f0000;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover,
+.btn-delete:hover {
+    background-color: #150000;
+}
+
+/* Logout Button */
+form button[type="submit"] {
+    margin-bottom: 10px;
+}
+
+/* Image */
+img {
+    border-radius: 10px;
+    border: 3px solid #43a047;
+    margin: 15px 0;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #1A5A46;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #dfe6e9;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8fff8;
+}
+
+table tr:hover {
+    background-color: #e8f5e9;
+}
+
+/* Action Buttons */
+td button {
+    margin-right: 5px;
+}
+
+/* Add Button */
+a[href="/inputsampah"] {
+    display: inline-block;
+    background-color: #43a047;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+a[href="/inputsampah"]:hover {
+    background-color: #2e7d32;
+}
+
+/* Warning Box */
+.warning-box {
+    background-color: #fff8e1;
+    border-left: 6px solid #fbc02d;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.warning-box h3 {
+    color: #f57f17;
+}
+
+.warning-box ul {
+    padding-left: 20px;
+}
+
+.warning-box li {
+    margin-bottom: 8px;
+}
+
+/* Container Feel */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.flex{
+    width:100%;
+    background-color: #1A5A46;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   STYLING KHUSUS DASHBOARD PABRIK (IRIS)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,700&display=swap');
+
+body.bg-hijau-muda {
+    background-color: #f4fbf4;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    /* Mengubah padding agar jarak atas-bawah proporsional dan kanan-kiri pakai persentase (lebih rapat) */
+    padding: 30px 4%; 
+    color: #333;
+}
+
+.app-container {
+    width: 100%;
+    /* Memperbesar ukuran maksimal wadah agar melebar hampir penuh layar */
+    max-width: 1350px; 
+    margin: 0 auto;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    color: #1a7b4f;
+    margin: 0;
+}
+
+.btn-logout {
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-logout:hover {
+    color: #d10000;
+}
+
+/* Banner Hijau */
+.header-banner {
+    background-color: #1a5d46;
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.header-banner h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-kirim-uang {
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-kirim-uang:hover {
+    background-color: #e68a00;
+}
+
+/* Data Card & Tabel */
+.data-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    margin-bottom: 25px;
+}
+
+.data-card h3 {
+    color: #1a5d46;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.data-card table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+.data-card thead {
+    background-color: #1a5d46;
+    color: white;
+}
+
+.data-card th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.data-card th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+.data-card th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+.data-card td {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+    vertical-align: middle;
+}
+
+/* Tombol Aksi */
+.action-buttons {
+    display: flex;
+    flex-direction: column; /* Menyusun tombol dari atas ke bawah */
+    gap: 8px; /* Jarak antar tombol */
+    align-items: center; /* Memusatkan tombol di tengah kolom */
+}
+
+.form-delete {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-edit {
+    background-color: #1a5d46; /* Hijau tua */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    width: 90px; /* Lebar tombol agar sama ukurannya */
+    box-sizing: border-box;
+}
+
+.btn-delete {
+    background-color: #cc0000; /* Merah */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 90px; /* Lebar tombol agar sama ukurannya */
+    box-sizing: border-box;
+}
+
+.btn-edit:hover {
+    background-color: #134634;
+}
+
+.btn-delete:hover {
+    background-color: #a30000;
+}
+
+/* Warning Card */
+.warning-card {
+    background-color: #fcefb4; /* Kuning soft */
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.warning-card h4 {
+    color: #8b6d23;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.warning-card p {
+    color: #6a5215;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.warning-card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #6a5215;
+    font-size: 14px;
+}
+
+.warning-card li {
+    margin-bottom: 6px;
+}
+/* ==========================================================================
+   STYLING KHUSUS HALAMAN LOGIN (IRIS)
+   ========================================================================== */
+
+/* Layout utama: Membagi layar jadi 2 kolom */
+.login-wrapper {
+    display: flex;
+    min-height: 80vh; /* Memanfaatkan sisa tinggi layar */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Kiri: Logo Besar */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 110px; /* Ukuran besar sesuai mockup */
+    font-weight: 700;
+    font-style: italic;
+    color: #1a5d46;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Kanan: Form Login */
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: #f6faf6; /* Latar hijau sangat pucat */
+    border-radius: 12px;
+    padding: 50px 60px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.login-title {
+    color: #1a5d46;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+/* Input Form */
+.input-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #1a5d46;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.custom-input {
+    padding: 12px 15px;
+    border: 1px solid #1a5d46;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.custom-input::placeholder {
+    color: #c0c0c0;
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 0 2px rgba(26, 93, 70, 0.2); /* Efek glow hijau saat diklik */
+}
+
+/* Input Khusus Kata Sandi (Untuk Ikon Mata) */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper .custom-input {
+    width: 100%;
+    padding-right: 40px; /* Jarak agar teks tidak menabrak ikon mata */
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 10px;
+}
+
+.custom-checkbox {
+    accent-color: #1a5d46; /* Ubah warna default checkbox biru jadi hijau */
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox-label {
+    font-size: 13px;
+    color: #1a5d46;
+    cursor: pointer;
+}
+
+/* Tombol Submit */
+.submit-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-masuk {
+    background-color: #1a5d46;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 75%; /* Lebar tombol */
+    transition: background-color 0.3s ease;
+}
+
+.btn-masuk:hover {
+    background-color: #134634;
+}
+
+/* Teks Error validasi Laravel */
+.error-message {
+    color: #d10000;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* Tampilan Responsif (Jika dibuka di HP) */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .login-left {
+        margin-bottom: 30px;
+    }
+    .login-logo-text {
+        font-size: 80px;
+    }
+    .login-card {
+        padding: 40px 30px;
+    }
+}
+/* ==========================================================================
+   STYLING KHUSUS HALAMAN EDIT TRANSAKSI PABRIK (IRIS)
+   ========================================================================== */
+
+/* Class tambahan untuk meluruskan kartu ke tengah layar */
+body.iris-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.iris-modal-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.iris-modal-title {
+    color: #1a5d46;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.iris-form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.iris-form-group label {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.iris-form-input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.iris-form-input:focus {
+    outline: none;
+    border-color: #1a5d46;
+    box-shadow: 0 0 0 3px rgba(26, 93, 70, 0.1);
+}
+
+.iris-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.iris-btn-simpan {
+    background-color: #1a5d46;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 140px;
+}
+
+.iris-btn-simpan:hover {
+    background-color: #134634;
+}
+/* ==========================================================================
+   STYLING KHUSUS HALAMAN REGISTER (IRIS)
+   ========================================================================== */
+
+.iris-register-wrapper {
+    display: flex;
+    min-height: calc(100vh - 100px); 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+}
+
+.iris-register-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iris-register-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 110px;
+    font-weight: 700;
+    font-style: italic;
+    color: #1a5d46;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.iris-register-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.iris-register-card {
+    background-color: #f6faf6;
+    border-radius: 12px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.iris-register-title {
+    color: #1a5d46;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.iris-input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.iris-input-group label {
+    color: #1a5d46;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.iris-input {
+    padding: 12px 15px;
+    border: 1px solid #1a5d46;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.iris-input::placeholder {
+    color: #c0c0c0;
+}
+
+.iris-input:focus {
+    box-shadow: 0 0 0 2px rgba(26, 93, 70, 0.2);
+}
+
+.iris-password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.iris-password-wrapper .iris-input {
+    padding-right: 40px;
+}
+
+.iris-toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.iris-submit-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.iris-btn-daftar {
+    background-color: #1a5d46;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 75%;
+    transition: background-color 0.3s ease;
+}
+
+.iris-btn-daftar:hover {
+    background-color: #134634;
+}
+
+.iris-error {
+    color: #d10000;
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .iris-register-wrapper {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .iris-register-left {
+        margin-bottom: 30px;
+        display: none;
+    }
+    .iris-register-card {
+        padding: 40px 30px;
+    }
+}
+/* ==========================================================================
+   STYLING HALAMAN AUTENTIKASI (LOGIN & REGISTER SEUKURAN) - IRIS
+   ========================================================================== */
+
+.iris-login-wrapper,
+.iris-register-wrapper {
+    display: flex;
+    /* Ubah min-height agar tidak menabrak navbar */
+    min-height: calc(100vh - 80px); 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4fbf4; /* Sesuaikan dengan background body */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iris-login-left,
+.iris-register-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iris-login-logo,
+.iris-register-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 110px;
+    font-weight: 700;
+    font-style: italic;
+    color: #1a5d46;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.iris-login-right,
+.iris-register-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.iris-login-card,
+.iris-register-card {
+    background-color: #f6faf6;
+    border-radius: 12px;
+    padding: 45px 50px; /* Jarak padding disamakan rata */
+    width: 100%;
+    max-width: 440px; /* Lebar maksimal disamakan agar seimbang */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.iris-login-title,
+.iris-register-title {
+    color: #1a5d46;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+.iris-input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.iris-input-group label {
+    color: #1a5d46;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.iris-input {
+    padding: 12px 15px;
+    border: 1px solid #1a5d46;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.iris-input::placeholder {
+    color: #c0c0c0;
+}
+
+.iris-input:focus {
+    box-shadow: 0 0 0 2px rgba(26, 93, 70, 0.2);
+}
+
+.iris-password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.iris-password-wrapper .iris-input {
+    padding-right: 40px;
+}
+
+.iris-toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.iris-checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 10px;
+}
+
+.iris-checkbox {
+    accent-color: #1a5d46;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.iris-checkbox-label {
+    font-size: 13px;
+    color: #1a5d46;
+    cursor: pointer;
+    margin: 0;
+}
+
+.iris-submit-group {
+    display: flex;
+    justify-content: center;
+}
+
+.iris-btn-masuk,
+.iris-btn-daftar {
+    background-color: #1a5d46;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 75%;
+    transition: background-color 0.3s ease;
+}
+
+.iris-btn-masuk:hover,
+.iris-btn-daftar:hover {
+    background-color: #134634;
+}
+
+.iris-error {
+    color: #d10000;
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .iris-login-wrapper,
+    .iris-register-wrapper {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .iris-login-left,
+    .iris-register-left {
+        margin-bottom: 30px;
+    }
+    .iris-register-left {
+        display: none; /* Menyembunyikan logo khusus halaman register di HP */
+    }
+    .iris-login-logo,
+    .iris-register-logo {
+        font-size: 80px;
+    }
+    .iris-login-card,
+    .iris-register-card {
+        padding: 40px 30px;
+    }
+}
+
+/* Styling tombol yang dipaksa seragam */
+.iris-btn-simpan,
+.iris-btn-batal {
+    display: inline-flex;       /* Menggunakan flex agar teks di tengah */
+    align-items: center;        /* Vertikal center */
+    justify-content: center;    /* Horizontal center */
+    
+    width: 140px;               /* Berikan lebar yang SAMA PERSIS */
+    height: 45px;               /* Berikan tinggi yang SAMA PERSIS */
+    
+    border-radius: 25px;        /* Bentuk oval */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;            /* Ukuran font yang sama */
+    text-decoration: none;      /* Menghapus garis bawah pada link */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 5px;              /* Memberi sedikit jarak antar tombol */
+}
+
+/* Tombol Update (Hijau Tua) */
+.iris-btn-simpan {
+    background-color: #1a5d46;
+    color: white;
+}
+
+.iris-btn-simpan:hover {
+    background-color: #134634;
+}
+
+/* Tombol Cancel (Abu-abu Muda) */
+.iris-btn-batal {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.iris-btn-batal:hover {
+    background-color: #d0d0d0;
+}
+
